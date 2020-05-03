@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo 2</title>
+</head>
+
+<p id="textTest"></p>
+
+<body>
+    <h1>Exercice 2</h1>
+    <p>A l'aide d'une boucle afficher tous les nombre de 0 à 100. Pour chaque multiples de 15, les remplacer par '...
+    </p>
+    <button type="button" id="myButton">Generate</button>
+    <ul id='myNumber'></ul>
+
+    <script>
+        myButton.addEventListener('click', function () {
+            for (i = 0; i <= 100; i++) {
+                let myP = document.createElement('li');
+                if (i % 15 == 0) {
+                    myP.innerText = '...';
+                } else {
+                    myP.innerText = i;
+                }
+                myNumber.appendChild(myP);
+            }
+        })
+    </script>
+</body>
+
+</html>
